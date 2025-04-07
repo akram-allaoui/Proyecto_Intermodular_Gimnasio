@@ -4,16 +4,16 @@ package Gimnasio;
 * Clase Trabajador, representa un empleado del gimnasio.
 * Contiene información personal como nombre, apellidos, NIF, fecha de nacimiento y correo electrónico.
 * @version 01-2025
-* @author Juan Franco
+* @author Fernando del Alamo
 * @since 07-04-2025
 */
 public class Trabajador {
 
-    protected String nif;        // NIF del trabajador
-    protected String nombre;     // Nombre del trabajador
-    protected String apellidos;  // Apellidos del trabajador
-    protected String fnac;       // Fecha de nacimiento
-    protected String email;      // Correo electrónico
+    protected String nif;       
+    protected String nombre;     
+    protected String apellidos;  
+    protected String fnac; 
+    protected String email;   
 
     /**
     * Constructor de la clase Trabajador con todos los atributos.
