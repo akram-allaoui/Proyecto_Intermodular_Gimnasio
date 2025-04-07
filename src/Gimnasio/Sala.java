@@ -9,11 +9,11 @@ package Gimnasio;
 */
 public class Sala {
 
-    protected String nifCliente; // NIF del cliente
-    protected int codGimnasio;   // Código del gimnasio
-    protected int codigo;        // Código identificador de la sala
-    protected int clases;        // Número de clases disponibles
-    protected String horario;    // Horario de uso
+    protected String nifCliente;
+    protected int codGimnasio;  
+    protected int codigo;       
+    protected int clases;       
+    protected String horario;    
 
     /**
     * Constructor de la clase Sala con todos sus parámetros.
@@ -83,7 +83,6 @@ public class Sala {
 
     /**
     * Método que genera una representación en formato XML de la sala.  
-    * Más información +
     * @return Cadena XML con los datos de la sala
     */
     public String toXml() {
@@ -102,7 +101,6 @@ public class Sala {
 
     /**
     * Método que genera una representación en formato JSON de la sala.  
-    * Más información +
     * @return Cadena JSON con los datos de la sala
     */
     public String toJson() {
