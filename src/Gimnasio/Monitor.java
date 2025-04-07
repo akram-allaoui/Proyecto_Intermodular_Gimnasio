@@ -25,7 +25,7 @@ public class Monitor extends Trabajador {
      * Método que simula que el monitor está dirigiendo una clase.
      */
     public void dirigir() {
-        // Aquí podrías poner una funcionalidad más adelante
+       
     }
 
     /**
