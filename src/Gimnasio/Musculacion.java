@@ -23,7 +23,6 @@ public class Musculacion extends Sala {
 
     /**
     * Método que genera una representación en formato JSON de la sala de musculación.  
-    * Más información +
     * @return Cadena JSON que contiene el código de musculación
     */
     public String toJson() {
@@ -39,8 +38,7 @@ public class Musculacion extends Sala {
     }
 
     /**
-    * Método que genera una representación en formato XML de la sala de musculación.  
-    * Más información +
+    * Método que genera una representación en formato XML de la sala de musculación.
     * @return Cadena XML que contiene el código de musculación
     */
     public String toXml() {
