@@ -1,4 +1,10 @@
+/**
+ * @author Akram Allaoui
+ */
 package Gimnasio;
+/**
+ * Representa el registro de acceso de un cliente al gimnasio.
+ */
 
 public class Acceso {
 
@@ -6,8 +12,14 @@ public class Acceso {
     private String nifCliente;
     private String fechaEntrada;
     private String fechaSalida;
-
-
+/**
+     * Constructor para crear un registro de acceso.
+     * @param codigo Código único del gimnasio (4 dígitos)
+     * @param nif NIF del cliente (formato 12345678X)
+     * @param feEn Fecha y hora de entrada (formato dd/MM/yyyy HH:mm)
+     * @param fecSa Fecha y hora de salida (formato dd/MM/yyyy HH:mm)
+     * @throws IllegalArgumentException Si algún parámetro no cumple el formato
+     */
 
     public Acceso(int codigo, String nif, String feEn, String fecSa) {
 
@@ -17,8 +29,11 @@ public class Acceso {
         this.fechaSalida = fecSa;
     }
 
-
-
+    /**
+     * Genera representación JSON del acceso.
+     * @return String en formato JSON con todos los campos
+     * @example {"Acceso": {"CodigoGimnasio": "1234", "nifCliente": "12345678X", ...}}
+     */
 
         public String toJson() {
         StringBuilder jsonBuilder = new StringBuilder();
@@ -35,7 +50,11 @@ public class Acceso {
         return jsonBuilder.toString();
 
         }
-
+/**
+     * Genera representación XML del acceso.
+     * @return String en formato XML con todos los campos
+     * @example <Acceso><CodigoGimnasio>1234</CodigoGimnasio>...</Acceso>
+     */
     public String toXml() {
         StringBuilder jsonBuilder = new StringBuilder();
 
@@ -49,10 +68,4 @@ public class Acceso {
         return jsonBuilder.toString();
 
     }
-
-
-
-
-
-
 }
