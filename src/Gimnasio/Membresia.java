@@ -8,7 +8,7 @@ package Gimnasio;
  */
 public class Membresia {
 
-    private String tipo;     // Tipo de membresía (ej: básica, premium, etc.)
+    private String tipo;     // Tipo de membresía (gold, silver, bronce)
     private double precio;   // Precio de la membresía
 
     /**
